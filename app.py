@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
-# keeps each browser session's chat history separate
+# keeps each session separate, resets when server restarts
 chat_sessions = {}
 
 
@@ -39,7 +39,7 @@ def chat():
 
     try:
         history = get_or_create_chat(session_id)
-        history.append({"role": "user", "content": user_message})
+        history.append({"role": "user", "content": user_message})  # add message to history first so the model gets full context
 
         response = client.chat.completions.create(
             model="llama-3.3-70b-versatile",

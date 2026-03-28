@@ -5,7 +5,7 @@ A chatbot I built using Python and Flask that connects to Googles Gemini API. Yo
 ## Stack
 
 - Python + Flask for the backend
-- Gemini 1.5 Flash as the AI model
+- Gemini 2.5 Flash as the AI model
 - GROQ as the AI model
 - Plain HTML CSS and JS for the frontend
 
@@ -16,15 +16,17 @@ Or else you can use GROQ API key as well from https://console.groq.com/home
 
 ```bash
 git clone https://github.com/yourusername/ai-chatbot.git
-cd ai-chatbot
-
 python -m venv venv
 venv\Scripts\activate
 
 pip install -r requirements.txt
 ```
 
-Rename `.env.example` to `.env` and paste your API key in there.
+Get API KEY FROM :
+- Gemini: https://aistudio.google.com
+- Groq: https://console.groq.com
+
+Create `.env` & paste your API key.
 
 Then just run it:
 

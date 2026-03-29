@@ -7,7 +7,7 @@ built this as my first project using an AI api, wanted to see how the conversati
 ## stack
 ```
 - python + flask
-- groq (llama 3.3) or gemini as the model
+- groq or gemini as the model
 - plain html css js for the frontend
 ```
 ## setup

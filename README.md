@@ -21,8 +21,9 @@ venv\Scripts\activate
 pip install -r requirements.txt
 
 create a .env file and add your key:
+```
 GROQ_API_KEY=your_key_here
-
+```
 then run:
 python app.py
 
